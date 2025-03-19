@@ -185,13 +185,9 @@ h4 {
   margin-bottom: 0.5em;
 }
 
-.hero__description span {
-  display: block;
-  font-weight: 700;
-  margin-top: 0.75em;
-  letter-spacing: 1px;
-  color: #ff6b35;
-  font-size: var(--text-h3);
+.hero__description {
+  max-width: 60ch;
+  margin: 0 auto;
 }
 
 /* ==============
