@@ -1,3 +1,19 @@
+/* ==============
+#Basic Rules
+===============*/
+
+:root {
+  --text-small: clamp(1.6rem, 1.8vw, 1.8rem); /* 16px - 18px */
+  --text-body: clamp(1.8rem, 2vw, 2rem); /* 18px - 20px */
+  --text-h1: clamp(3.6rem, 5vw, 4.8rem); /* 36px - 48px */
+  --text-h2: clamp(3rem, 4vw, 3.6rem); /* 30px - 36px */
+  --text-h3: clamp(2.4rem, 3vw, 3rem); /* 24px - 30px */
+  --text-h4: clamp(2rem, 2.5vw, 2.4rem); /* 20px - 24px */
+
+  --font-roboto: "Roboto", sans-serif;
+  --font-source-sans-3: "Source Sans 3", sans-serif;
+}
+
 *,
 *::before,
 *::after {
@@ -6,4 +22,121 @@
 
 html {
   font-size: 62.5%; /* 10px */
+}
+
+body {
+  font-size: var(--text-body);
+  line-height: 1.6;
+  font-family: var(--font-source-sans-3);
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+h1 {
+  font-size: var(--text-h1);
+}
+
+h2 {
+  font-size: var(--text-h2);
+}
+
+h3 {
+  font-size: var(--text-h3);
+}
+
+h4 {
+  font-size: var(--text-h4);
+}
+
+/* ==============
+#Nav
+===============*/
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 0.5em 0.75em;
+}
+
+.logo {
+  text-decoration: none;
+  font-family: var(--font-roboto);
+  font-size: clamp(2rem, 4vw, 3rem);
+  padding: 0.35em;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 2px;
+  color: #444;
+}
+
+.nav__list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding-top: 3.5rem;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3.5rem;
+  align-items: center;
+  font-size: var(--text-body);
+  transition: all 0.3s ease;
+  transform: translateX(0);
+}
+
+.nav__link {
+  font-size: 2.25rem;
+  text-decoration: none;
+  font-weight: 700;
+  color: #444;
+}
+
+/* ==============
+#Mobile Nav
+===============*/
+
+.nav__mobile {
+  background-color: inherit;
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+  cursor: pointer;
+}
+
+.nav__mobile-line {
+  width: 30px;
+  height: 3px;
+  background-color: black;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.toggle .nav__mobile-line:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+  transform-origin: center;
+}
+
+.toggle .nav__mobile-line:nth-child(2) {
+  opacity: 0;
+}
+
+.toggle .nav__mobile-line:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+  transform-origin: center;
+}
+
+.show .nav__list {
+  display: block;
+}
+
+/* ==============
+#Utilities
+===============*/
+
+.hide-nav {
+  transform: translateX(-100%);
 }
