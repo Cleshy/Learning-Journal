@@ -1,0 +1,68 @@
+[
+  {
+    "id": "1a2b3c4d-1234-5678-9101-abcdefabcdef",
+    "image": "/images/blog_1.jpg",
+    "alt": "Laptop on a wooden desk with a phone beside it",
+    "photographer": "Clay Banks",
+    "photographer_url": "https://unsplash.com/@claybanks",
+    "image_source": "https://unsplash.com/photos/oO6Gm16Cqcg",
+    "date": "2024-03-15",
+    "title": "Escaping the Tutorial Hell: How I Took Control of My Learning",
+    "description": "Spending countless hours on tutorials but still feeling lost? Here’s how I broke free from the cycle and started building real projects."
+  },
+  {
+    "id": "5e6f7g8h-2345-6789-1011-ghijklmnopqr",
+    "image": "/images/blog_2.jpg",
+    "alt": "Man covering his face in frustration",
+    "photographer": "Sander Sammy",
+    "photographer_url": "https://unsplash.com/@sammywilliams",
+    "image_source": "https://unsplash.com/photos/ufgOEVZuHgM",
+    "date": "2024-02-20",
+    "title": "Impostor Syndrome in Coding: Why You’re Not a Fraud",
+    "description": "Every developer experiences impostor syndrome. This is my story of overcoming self-doubt and learning to embrace the journey."
+  },
+  {
+    "id": "9i0j1k2l-3456-7890-1121-stuvwxyzabcd",
+    "image": "/images/blog_3.jpg",
+    "alt": "A black computer monitor displaying code",
+    "photographer": "Markus Spiske",
+    "photographer_url": "https://unsplash.com/@markusspiske",
+    "image_source": "https://unsplash.com/photos/bMvuh0YQQ68",
+    "date": "2024-01-10",
+    "title": "Debugging Nightmares: How to Stay Sane When Nothing Works",
+    "description": "Staring at an error message for hours? Here are my debugging strategies and mindset shifts that made problem-solving easier."
+  },
+  {
+    "id": "3m4n5o6p-4567-8901-1221-abcdefghij12",
+    "image": "/images/blog_4.jpg",
+    "alt": "JavaScript code displayed on a screen",
+    "photographer": "Gabriel Heinzer",
+    "photographer_url": "https://unsplash.com/@6heinz3r",
+    "image_source": "https://unsplash.com/photos/g5jpH62pwes",
+    "date": "2023-12-05",
+    "title": "JavaScript: The Language I Loved to Hate (At First)",
+    "description": "My initial experience with JavaScript was frustrating. But over time, I learned to appreciate its quirks. Here’s what changed my mind."
+  },
+  {
+    "id": "7q8r9s0t-5678-9012-1331-klmnopqrstuv",
+    "image": "/images/blog_5.jpg",
+    "alt": "Smartphone placed on books with a blurred background",
+    "photographer": "KOBU Agency",
+    "photographer_url": "https://unsplash.com/@kobuagency",
+    "image_source": "https://unsplash.com/photos/ipARHaxETRk",
+    "date": "2023-11-15",
+    "title": "CSS Grid vs. Flexbox: Which One Should You Use?",
+    "description": "Both CSS Grid and Flexbox are powerful layout tools, but when should you use one over the other? Let’s break it down."
+  },
+  {
+    "id": "a1b2c3d4-6789-0123-1441-mnopqrstuvwx",
+    "image": "/images/blog_6.jpg",
+    "alt": "Laptop screen showing lines of code",
+    "photographer": "Emile Perron",
+    "photographer_url": "https://unsplash.com/@emilep",
+    "image_source": "https://unsplash.com/photos/xrVDYZRGdw4",
+    "date": "2023-10-20",
+    "title": "The Day I Deployed My First Website",
+    "description": "Deployment is often overlooked in tutorials, but it’s crucial. Here’s what I wish I had known before pushing my first project live."
+  }
+]

@@ -134,6 +134,7 @@ h4 {
   width: 30px;
   height: 3px;
   background-color: black;
+  border-radius: 50px;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -161,7 +162,7 @@ h4 {
 
 .hero {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)),
-    url("/images/hero_img.jpg");
+    url("/images/hero_img.webp");
 
   background-size: cover;
   background-position: center 15rem;
@@ -194,18 +195,18 @@ h4 {
 #Blog Posts
 ===============*/
 
-.blog-posts {
+.recent-posts {
   padding: 6rem 2rem;
 }
 
-.blog-posts__container {
+.posts__container {
   display: grid;
   /* grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr)); */
   gap: 2.5em;
 }
 
 @media screen and (min-width: 750px) {
-  .blog-posts__container {
+  .posts__container {
     grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
   }
 }
@@ -345,6 +346,22 @@ h4 {
 /* ==============
 #Utilities
 ===============*/
+
+.loader {
+  width: 7rem;
+  margin: 0 auto;
+  aspect-ratio: 4;
+  background: radial-gradient(circle closest-side, #000 90%, #0000) 0 /
+    calc(100% / 3) 100% space;
+  clip-path: inset(0 100% 0 0);
+  animation: l1 1.25s steps(4) infinite;
+}
+
+@keyframes l1 {
+  to {
+    clip-path: inset(0 -34% 0 0);
+  }
+}
 
 .hide-nav {
   transform: translateX(-100%);
