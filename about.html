@@ -9,6 +9,25 @@
         content="width=
   , initial-scale=1.0"
       />
+      <!-- Favicon -->
+      <link
+        rel="apple-touch-icon"
+        sizes="180x180"
+        href="/images/favicon/apple-touch-icon.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="32x32"
+        href="/images/favicon/favicon-32x32.png"
+      />
+      <link
+        rel="icon"
+        type="image/png"
+        sizes="16x16"
+        href="/images/favicon/favicon-16x16.png"
+      />
+      <link rel="manifest" href="/images/favicon/site.webmanifest" />
       <!-- Google Fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,7 +43,7 @@
     <body>
       <header>
         <nav class="nav container">
-          <a class="logo" href="#">Cleshy's Journal</a>
+          <a class="logo" href="index.html">Cleshy's Journal</a>
           <button
             class="nav__mobile hidden"
             id="toggle-nav"
@@ -34,7 +53,7 @@
             <span class="nav__mobile-line line-2"></span>
             <span class="nav__mobile-line line-3"></span>
           </button>
-          <ul class="nav__list hide-nav">
+          <ul class="nav__list">
             <li class="nav__item">
               <a class="nav__link" href="index.html">Home</a>
             </li>
@@ -45,7 +64,75 @@
           </ul>
         </nav>
       </header>
-      <main><h1>About!</h1></main>
+      <main>
+        <section class="about">
+          <div class="container">
+            <header class="about__intro">
+              <img class="about__img" src="./images/me.jpg" alt="" />
+              <div>
+                <h1 class="about__heading">
+                  <span class="about__heading--welcome"
+                    >Hi there! <span class="wave">👋</span></span
+                  >
+                  My name is Szilárd and welcome to my learning journal.
+                </h1>
+                <p>
+                  After several months of learning in the Frontend Developer
+                  Career Path, I've made the big jump over to the Bootcamp to
+                  get expert code reviews of my Solo Projects projects and meet
+                  like-minded peers.
+                </p>
+              </div>
+            </header>
+            <section class="about__info">
+              <div class="about__box">
+                <h3 class="heading-tertiary">
+                  How I stay committed to learning
+                </h3>
+                <p>
+                  I like to think of myself as a lifelong learner. I used to
+                  spend hours and hours learning, then try to create simple
+                  projects using what I learned or work new techniques into
+                  existing projects.
+                </p>
+                <p>
+                  While that was fun, I felt like it would be helpful to share
+                  what I was learning and most things about my journey with the
+                  world.
+                </p>
+              </div>
+              <div class="about__box">
+                <h3 class="heading-tertiary">How I got started</h3>
+                <p>
+                  I started simple and gradually grew my learning journal site.
+                  I would take notes about what I was learning. After each
+                  learning session, I'd use my notes to not only reflect on what
+                  I learned but also write short summaries of what I learned
+                  using my own words.
+                </p>
+                <p>
+                  That helped me grok what I was learning, and I realized that
+                  posting my learning summaries was also helping others learn
+                  and stay motivated.
+                </p>
+              </div>
+            </section>
+            <div class="recent__posts">
+              <h2 class="heading-secondary">Recent posts</h2>
+              <div class="posts__container" id="posts__container">
+                <div class="loader" id="loader"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__heading">My Learning Journal</p>
+        <p class="footer__copyright">
+          Copyright &copy;<span class="year"></span>
+        </p>
+      </footer>
+      <script src="js/script.js"></script>
     </body>
   </html>
 </html>

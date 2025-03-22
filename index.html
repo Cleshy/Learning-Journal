@@ -41,7 +41,7 @@
   <body>
     <header>
       <nav class="nav container">
-        <a class="logo" href="#">Cleshy's Journal</a>
+        <a class="logo" href="index.html">Cleshy's Journal</a>
         <button
           class="nav__mobile hidden"
           id="toggle-nav"
@@ -51,7 +51,7 @@
           <span class="nav__mobile-line line-2"></span>
           <span class="nav__mobile-line line-3"></span>
         </button>
-        <ul class="nav__list hide-nav">
+        <ul class="nav__list">
           <li class="nav__item">
             <a class="nav__link" href="index.html">Home</a>
           </li>
@@ -74,12 +74,10 @@
       </div>
       <section class="recent-posts container">
         <h2 class="heading-secondary">Recent Posts</h2>
-        <div class="posts__container" id="posts__container">
+        <div class="posts__container" id="posts__container-home">
           <div class="loader" id="loader"></div>
         </div>
-        <div class="view-more">
-          <span class="view-more-link">View More</span>
-        </div>
+        <button class="view-more-btn" id="view-more-btn">View More</button>
       </section>
     </main>
     <footer class="footer">

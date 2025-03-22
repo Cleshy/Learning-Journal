@@ -8,7 +8,15 @@
   if (toggleNav && navList) {
     toggleNav.addEventListener("click", function () {
       this.classList.toggle("toggle");
-      navList.classList.toggle("hide-nav");
+      navList.classList.toggle("show-nav");
+
+      if (this.classList.contains("toggle")) {
+        document.body.style.overflow = "hidden";
+      }
+    });
+
+    navList.addEventListener("click", function (e) {
+      console.log(e.target);
     });
   }
 
@@ -27,8 +35,32 @@
 Get & Render recent posts
 ====================== */
 
-getPosts();
-renderPosts();
+document.addEventListener("DOMContentLoaded", async () => {
+  const pagePostsEl = document.getElementById("posts__container");
+  const homePagePostsEl = document.getElementById("posts__container-home");
+
+  const viewMoreBtn = document.getElementById("view-more-btn");
+
+  const posts = await getPosts();
+
+  if (pagePostsEl) {
+    renderPosts(pagePostsEl, posts);
+  }
+
+  if (homePagePostsEl) {
+    let visiblePosts = 3;
+    renderPosts(homePagePostsEl, posts, visiblePosts);
+
+    viewMoreBtn.addEventListener("click", () => {
+      visiblePosts += 3;
+      renderPosts(homePagePostsEl, posts, visiblePosts);
+
+      if (visiblePosts >= posts.length) {
+        viewMoreBtn.style.display = "none";
+      }
+    });
+  }
+});
 
 async function getPosts() {
   try {
@@ -44,17 +76,19 @@ async function getPosts() {
   }
 }
 
-async function renderPosts() {
-  const postsEl = document.getElementById("posts__container");
+async function renderPosts(postsEl, posts, postCounter = 3) {
   let postsHTML = "";
 
-  const posts = await getPosts();
+  posts.slice(0, postCounter).forEach((post) => {
+    const formattedDate =
+      typeof formatDateToText === "function"
+        ? formatDateToText(post.date)
+        : post.date;
 
-  posts.forEach((post) => {
     postsHTML += `
       <div class="post">
         <div class="post__img-container">
-          <img class="post__img" src="${post.image}" alt=${post.alt} />
+          <img class="post__img" src="${post.image}" alt="${post.alt}" />
           <span class="post__img-unplash"
             >Photo by
             <a
@@ -73,7 +107,7 @@ async function renderPosts() {
           >
         </div>
         <div class="post__info">
-          <span class="post__date">${formatDateToText(post.date)}</span>
+          <span class="post__date">${formattedDate}</span>
           <h3 class="post__title">
             ${post.title}
           </h3>
@@ -88,9 +122,7 @@ async function renderPosts() {
     `;
   });
 
-  setTimeout(() => {
-    postsEl.innerHTML = postsHTML;
-  }, 5000);
+  postsEl.innerHTML = postsHTML;
 }
 
 function formatDateToText(dateString) {

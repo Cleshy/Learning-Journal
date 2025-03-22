@@ -64,5 +64,71 @@
     "date": "2023-10-20",
     "title": "The Day I Deployed My First Website",
     "description": "Deployment is often overlooked in tutorials, but it’s crucial. Here’s what I wish I had known before pushing my first project live."
+  },
+  {
+    "id": "b2c3d4e5-7890-1234-1551-qrstuvwxyzab",
+    "image": "/images/blog_7.jpg",
+    "alt": "Person typing on a laptop with a coffee mug beside it",
+    "photographer": "Christin Hume",
+    "photographer_url": "https://unsplash.com/@christinhumephoto",
+    "image_source": "https://unsplash.com/photos/Hcfwew744z4",
+    "date": "2024-03-01",
+    "title": "How I Built My First Portfolio Website",
+    "description": "Building a portfolio website is a rite of passage for developers. Here’s how I approached mine and lessons I learned along the way."
+  },
+  {
+    "id": "c3d4e5f6-8901-2345-1661-abcdefghijkl",
+    "image": "/images/blog_8.jpg",
+    "alt": "Code editor on a laptop screen with a plant in the background",
+    "photographer": "Fatos Bytyqi",
+    "photographer_url": "https://unsplash.com/@fatosbytyqi",
+    "image_source": "https://unsplash.com/photos/7pCFUybP_P8",
+    "date": "2024-02-10",
+    "title": "Why Version Control is a Developer’s Best Friend",
+    "description": "Version control systems like Git are essential for developers. Here’s how I started using Git and why it transformed my workflow."
+  },
+  {
+    "id": "d4e5f6g7-9012-3456-1771-mnopqrstuvwx",
+    "image": "/images/blog_9.jpg",
+    "alt": "Books and a laptop on a wooden desk",
+    "photographer": "Nick Morrison",
+    "photographer_url": "https://unsplash.com/@nickmorrison",
+    "image_source": "https://unsplash.com/photos/FHnnjk1Yj7Y",
+    "date": "2024-01-25",
+    "title": "Top 5 Resources That Helped Me Learn JavaScript",
+    "description": "From tutorials to documentation, these are the resources that made learning JavaScript easier and more enjoyable for me."
+  },
+  {
+    "id": "e5f6g7h8-0123-4567-1881-qrstuvwxyzcd",
+    "image": "/images/blog_10.jpg",
+    "alt": "Person writing notes with a laptop in the background",
+    "photographer": "Green Chameleon",
+    "photographer_url": "https://unsplash.com/@craftedbygc",
+    "image_source": "https://unsplash.com/photos/s9CC2SKySJM",
+    "date": "2023-12-30",
+    "title": "The Importance of Taking Notes While Learning to Code",
+    "description": "Taking notes is an underrated skill for developers. Here’s how I use note-taking to retain knowledge and improve my coding skills."
+  },
+  {
+    "id": "f6g7h8i9-1234-5678-1991-abcdefghijklmn",
+    "image": "/images/blog_11.jpg",
+    "alt": "Person debugging code on a laptop",
+    "photographer": "Kevin Ku",
+    "photographer_url": "https://unsplash.com/@ikukevk",
+    "image_source": "https://unsplash.com/photos/L8KQIPCODV8",
+    "date": "2023-11-05",
+    "title": "Debugging Like a Pro: Tips and Tricks for Beginners",
+    "description": "Debugging can be frustrating, but it’s a crucial skill. Here are my favorite tips and tools for finding and fixing bugs efficiently."
+  },
+  {
+    "id": "g7h8i9j0-2345-6789-2001-opqrstuvwxyzef",
+    "image": "/images/blog_12.jpg",
+    "alt": "Laptop with a cup of coffee and a notebook",
+    "photographer": "Nathan Dumlao",
+    "photographer_url": "https://unsplash.com/@nate_dumlao",
+    "image_source": "https://unsplash.com/photos/6VhPY27jdps",
+    "date": "2023-10-01",
+    "title": "How I Stay Motivated While Learning to Code",
+    "description": "Staying motivated can be tough, especially when progress feels slow. Here’s how I keep myself inspired and on track."
   }
 ]
