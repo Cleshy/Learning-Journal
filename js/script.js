@@ -71,7 +71,9 @@ async function getPosts() {
 async function renderPosts(postsEl, posts, postCounter = 3) {
   let postsHTML = "";
 
-  posts.slice(0, postCounter).forEach((post) => {
+  const sortedPosts = posts.sort((a, b) => a.date < b.date);
+
+  sortedPosts.slice(0, postCounter).forEach((post) => {
     const formattedDate =
       typeof formatDateToText === "function"
         ? formatDateToText(post.date)
