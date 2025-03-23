@@ -40,48 +40,66 @@
   </head>
   <body>
     <header>
-      <nav class="nav container">
-        <a class="logo" href="index.html">Cleshy's Journal</a>
-        <button
-          class="nav__mobile hidden"
-          id="toggle-nav"
-          aria-label="Toggle navigation"
-        >
-          <span class="nav__mobile-line line-1"></span>
-          <span class="nav__mobile-line line-2"></span>
-          <span class="nav__mobile-line line-3"></span>
-        </button>
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a class="nav__link" href="index.html">Home</a>
-          </li>
-          <li class="nav__item">
-            <a class="nav__link" href="about.html">About</a>
-          </li>
-          <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
-        </ul>
+      <nav class="nav">
+        <div class="nav__container">
+          <a class="nav__logo" href="index.html">Cleshy's Journal</a>
+          <button
+            class="nav__mobile-toggle hidden"
+            id="toggle-nav"
+            aria-label="Toggle navigation"
+          >
+            <span class="nav__mobile-line line-1"></span>
+            <span class="nav__mobile-line line-2"></span>
+            <span class="nav__mobile-line line-3"></span>
+          </button>
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="about.html">About</a>
+            </li>
+            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
+          </ul>
+        </div>
       </nav>
     </header>
     <main>
       <div class="hero">
         <div class="container">
-          <h1 class="heading-primary">My new journey as a bootcamp student.</h1>
+          <h1 class="hero__heading">My new journey as a bootcamp student.</h1>
           <p class="hero__description">
             After countless tutorials and blog posts, I chose Scrimba's Frontend
             Path. <span>No regrets.</span>
           </p>
         </div>
+        <span class="image-credit image-credit--bottom-left">
+          Photo by
+          <a
+            class="credit-link"
+            href="https://unsplash.com/@joshuaryanphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank"
+            >Joshua Reddekopp</a
+          >
+          on
+          <a
+            class="credit-link"
+            href="https://unsplash.com/photos/macbook-pro-on-brown-wooden-table-SyYmXSDnJ54?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            target="_blank"
+            >Unsplash</a
+          >
+        </span>
       </div>
-      <section class="recent-posts container">
+      <section class="container">
         <h2 class="heading-secondary">Recent Posts</h2>
-        <div class="posts__container" id="posts__container-home">
-          <div class="loader" id="loader"></div>
-        </div>
-        <button class="view-more-btn" id="view-more-btn">View More</button>
+        <div class="posts__container" id="posts__container-home"></div>
+        <button class="posts__view-more-btn" id="view-more-btn">
+          View More
+        </button>
       </section>
     </main>
     <footer class="footer">
-      <p class="footer__heading">My Learning Journal</p>
+      <p class="footer__title">My Learning Journal</p>
       <p class="footer__copyright">
         Copyright &copy;<span class="year"></span>
       </p>
@@ -89,7 +107,3 @@
     <script src="js/script.js"></script>
   </body>
 </html>
-
-<!-- HERO BG -->
-<!-- Photo by <a href="https://unsplash.com/@joshuaryanphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Joshua Reddekopp</a> on <a href="https://unsplash.com/photos/macbook-pro-on-brown-wooden-table-SyYmXSDnJ54?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-       -->

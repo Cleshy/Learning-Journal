@@ -42,26 +42,30 @@
     </head>
     <body>
       <header>
-        <nav class="nav container">
-          <a class="logo" href="index.html">Cleshy's Journal</a>
-          <button
-            class="nav__mobile hidden"
-            id="toggle-nav"
-            aria-label="Toggle navigation"
-          >
-            <span class="nav__mobile-line line-1"></span>
-            <span class="nav__mobile-line line-2"></span>
-            <span class="nav__mobile-line line-3"></span>
-          </button>
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a class="nav__link" href="index.html">Home</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="about.html">About</a>
-            </li>
-            <li class="nav__item"><a class="nav__link" href="#">Contact</a></li>
-          </ul>
+        <nav class="nav">
+          <div class="nav__container">
+            <a class="nav__logo" href="index.html">Cleshy's Journal</a>
+            <button
+              class="nav__mobile-toggle hidden"
+              id="toggle-nav"
+              aria-label="Toggle navigation"
+            >
+              <span class="nav__mobile-line line-1"></span>
+              <span class="nav__mobile-line line-2"></span>
+              <span class="nav__mobile-line line-3"></span>
+            </button>
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="index.html">Home</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="about.html">About</a>
+              </li>
+              <li class="nav__item">
+                <a class="nav__link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </header>
       <main>
@@ -77,57 +81,84 @@
                   My name is Szilárd and welcome to my learning journal.
                 </h1>
                 <p>
-                  After several months of learning in the Frontend Developer
-                  Career Path, I've made the big jump over to the Bootcamp to
-                  get expert code reviews of my Solo Projects projects and meet
-                  like-minded peers.
+                  After several months of self-learning through YouTube videos
+                  and blog articles, I felt like I lacked the structured path I
+                  needed to progress efficiently. I don't even remember the
+                  exact day, but at some point, I started looking for a
+                  solution.
+                </p>
+                <p>
+                  <a
+                    href="https://scrimba.com/learn/frontend"
+                    class="important-text"
+                    target="_blank"
+                  >
+                    Thanks to the MDN Team, I discovered Scrimba</a
+                  >. Since then, I’ve been steadily progressing, working through
+                  the well-structured courses and striving to achieve my goal.
                 </p>
               </div>
             </header>
-            <section class="about__info">
+          </div>
+          <div class="about__info">
+            <div class="text-container">
               <div class="about__box">
                 <h3 class="heading-tertiary">
-                  How I stay committed to learning
+                  The Power of Structured Learning
                 </h3>
                 <p>
-                  I like to think of myself as a lifelong learner. I used to
-                  spend hours and hours learning, then try to create simple
-                  projects using what I learned or work new techniques into
-                  existing projects.
-                </p>
-                <p>
-                  While that was fun, I felt like it would be helpful to share
-                  what I was learning and most things about my journey with the
-                  world.
+                  Learning on my own was great, but I often felt lost without a
+                  structured plan. Finding a program that provides a clear
+                  roadmap helped me stay focused and make steady progress. Now,
+                  I follow a well-defined curriculum, allowing me to build my
+                  skills step by step.
                 </p>
               </div>
               <div class="about__box">
-                <h3 class="heading-tertiary">How I got started</h3>
+                <h3 class="heading-tertiary">Overcoming Impostor Syndrome</h3>
                 <p>
-                  I started simple and gradually grew my learning journal site.
-                  I would take notes about what I was learning. After each
-                  learning session, I'd use my notes to not only reflect on what
-                  I learned but also write short summaries of what I learned
-                  using my own words.
-                </p>
-                <p>
-                  That helped me grok what I was learning, and I realized that
-                  posting my learning summaries was also helping others learn
-                  and stay motivated.
+                  For a long time, I struggled with impostor syndrome, feeling
+                  like my knowledge was never enough and that I would never
+                  reach my goals. However, I’ve come to realize that we are all
+                  capable of achieving our dreams if we stay persistent and keep
+                  improving. If you ever feel the same way, remember: progress
+                  takes time, and every step forward counts.
                 </p>
               </div>
-            </section>
-            <div class="recent__posts">
-              <h2 class="heading-secondary">Recent posts</h2>
-              <div class="posts__container" id="posts__container">
-                <div class="loader" id="loader"></div>
+              <div class="about__box">
+                <h3 class="heading-tertiary">
+                  The Importance of Deep Understanding
+                </h3>
+                <p>
+                  One thing that really helped me in my learning journey was
+                  refusing to move on until I fully understood a concept.
+                  Instead of rushing through materials, I took my time to grasp
+                  each topic and apply it in practice. This approach made a huge
+                  difference in retaining knowledge and gaining confidence.
+                </p>
+              </div>
+              <div class="about__box">
+                <h3 class="heading-tertiary">Stay Committed and Keep Going</h3>
+                <p>
+                  Learning to code is a marathon, not a sprint. There will be
+                  challenges along the way, but perseverance is key. No matter
+                  how difficult it gets, remember why you started and keep
+                  pushing forward.
+                  <span class="important-text">You’ve got this!</span>
+                </p>
               </div>
             </div>
           </div>
         </section>
+        <section>
+          <div class="container">
+            <h2 class="heading-secondary">Recent posts</h2>
+            <div class="posts__container" id="posts__container"></div>
+          </div>
+        </section>
       </main>
       <footer class="footer">
-        <p class="footer__heading">My Learning Journal</p>
+        <p class="footer__title">My Learning Journal</p>
         <p class="footer__copyright">
           Copyright &copy;<span class="year"></span>
         </p>

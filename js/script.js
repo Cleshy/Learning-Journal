@@ -9,14 +9,6 @@
     toggleNav.addEventListener("click", function () {
       this.classList.toggle("toggle");
       navList.classList.toggle("show-nav");
-
-      if (this.classList.contains("toggle")) {
-        document.body.style.overflow = "hidden";
-      }
-    });
-
-    navList.addEventListener("click", function (e) {
-      console.log(e.target);
     });
   }
 
@@ -86,36 +78,36 @@ async function renderPosts(postsEl, posts, postCounter = 3) {
         : post.date;
 
     postsHTML += `
-      <div class="post">
-        <div class="post__img-container">
-          <img class="post__img" src="${post.image}" alt="${post.alt}" />
-          <span class="post__img-unplash"
+      <div class="blog-post">
+        <div class="blog-post__image-container">
+          <img class="blog-post__image" src="${post.image}" alt="${post.alt}" />
+          <span class="image-credit image-credit--bottom-center image-credit--post"
             >Photo by
             <a
               href="${post.photographer_url}"
               target="_blank"
-              class="unplash-link"
+              class="credit-link"
               >${post.photographer}</a
             >
             on
             <a
               href="${post.image_source}"
               target="_blank"
-              class="unplash-link"
+              class="credit-link"
               >Unsplash</a
             ></span
           >
         </div>
-        <div class="post__info">
-          <span class="post__date">${formattedDate}</span>
-          <h3 class="post__title">
+        <div class="blog-post__content">
+          <span class="blog-post-date">${formattedDate}</span>
+          <h3 class="blog-post__title">
             ${post.title}
           </h3>
-          <p class="post__description">
+          <p class="blog-post__description">
             ${post.description}
           </p>
-          <div class="post__read-more">
-            <a href="#" class="read-more">Read more</a>
+          <div class="blog-post__read-more">
+            <a href="#" class="blog-post__read-more-link">Read more</a>
           </div>
         </div>
       </div>
