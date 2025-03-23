@@ -107,7 +107,7 @@ async function renderPosts(postsEl, posts, postCounter = 3) {
             ${post.description}
           </p>
           <div class="blog-post__read-more">
-            <a href="#" class="blog-post__read-more-link">Read more</a>
+            <a href="#" role="button" onclick="event.preventDefault();" class="blog-post__read-more-link">Read more</a>
           </div>
         </div>
       </div>
@@ -136,4 +136,18 @@ function formatDateToText(dateString) {
   const [year, month, day] = dateString.split("-");
 
   return `${months[parseInt(month) - 1]} ${parseInt(day)}, ${year}`;
+}
+
+/* ======================
+Contact Form
+====================== */
+const contactFormEl = document.getElementById("contact__form");
+
+if (contactFormEl) {
+  contactFormEl.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    document.getElementById("contact__message").classList.remove("hidden");
+    contactFormEl.classList.add("hidden");
+  });
 }

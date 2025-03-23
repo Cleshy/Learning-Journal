@@ -1,7 +1,7 @@
 [
   {
     "id": "1a2b3c4d-1234-5678-9101-abcdefabcdef",
-    "image": "/images/blog_1.jpg",
+    "image": "/images/blog_1.webp",
     "alt": "Laptop on a wooden desk with a phone beside it",
     "photographer": "Clay Banks",
     "photographer_url": "https://unsplash.com/@claybanks",
@@ -12,7 +12,7 @@
   },
   {
     "id": "5e6f7g8h-2345-6789-1011-ghijklmnopqr",
-    "image": "/images/blog_2.jpg",
+    "image": "/images/blog_2.webp",
     "alt": "Man covering his face in frustration",
     "photographer": "Sander Sammy",
     "photographer_url": "https://unsplash.com/@sammywilliams",
@@ -23,7 +23,7 @@
   },
   {
     "id": "9i0j1k2l-3456-7890-1121-stuvwxyzabcd",
-    "image": "/images/blog_3.jpg",
+    "image": "/images/blog_3.webp",
     "alt": "A black computer monitor displaying code",
     "photographer": "Markus Spiske",
     "photographer_url": "https://unsplash.com/@markusspiske",
@@ -34,7 +34,7 @@
   },
   {
     "id": "3m4n5o6p-4567-8901-1221-abcdefghij12",
-    "image": "/images/blog_4.jpg",
+    "image": "/images/blog_4.webp",
     "alt": "JavaScript code displayed on a screen",
     "photographer": "Gabriel Heinzer",
     "photographer_url": "https://unsplash.com/@6heinz3r",
@@ -45,7 +45,7 @@
   },
   {
     "id": "7q8r9s0t-5678-9012-1331-klmnopqrstuv",
-    "image": "/images/blog_5.jpg",
+    "image": "/images/blog_5.webp",
     "alt": "Smartphone placed on books with a blurred background",
     "photographer": "KOBU Agency",
     "photographer_url": "https://unsplash.com/@kobuagency",
@@ -56,7 +56,7 @@
   },
   {
     "id": "a1b2c3d4-6789-0123-1441-mnopqrstuvwx",
-    "image": "/images/blog_6.jpg",
+    "image": "/images/blog_6.webp",
     "alt": "Laptop screen showing lines of code",
     "photographer": "Emile Perron",
     "photographer_url": "https://unsplash.com/@emilep",
@@ -67,7 +67,7 @@
   },
   {
     "id": "b2c3d4e5-7890-1234-1551-qrstuvwxyzab",
-    "image": "/images/blog_7.jpg",
+    "image": "/images/blog_7.webp",
     "alt": "Person typing on a laptop with a coffee mug beside it",
     "photographer": "Christin Hume",
     "photographer_url": "https://unsplash.com/@christinhumephoto",
@@ -78,7 +78,7 @@
   },
   {
     "id": "c3d4e5f6-8901-2345-1661-abcdefghijkl",
-    "image": "/images/blog_8.jpg",
+    "image": "/images/blog_8.webp",
     "alt": "Code editor on a laptop screen with a plant in the background",
     "photographer": "Fatos Bytyqi",
     "photographer_url": "https://unsplash.com/@fatosbytyqi",
@@ -89,7 +89,7 @@
   },
   {
     "id": "d4e5f6g7-9012-3456-1771-mnopqrstuvwx",
-    "image": "/images/blog_9.jpg",
+    "image": "/images/blog_9.webp",
     "alt": "Books and a laptop on a wooden desk",
     "photographer": "Nick Morrison",
     "photographer_url": "https://unsplash.com/@nickmorrison",
@@ -100,7 +100,7 @@
   },
   {
     "id": "e5f6g7h8-0123-4567-1881-qrstuvwxyzcd",
-    "image": "/images/blog_10.jpg",
+    "image": "/images/blog_10.webp",
     "alt": "Person writing notes with a laptop in the background",
     "photographer": "Green Chameleon",
     "photographer_url": "https://unsplash.com/@craftedbygc",
@@ -111,7 +111,7 @@
   },
   {
     "id": "f6g7h8i9-1234-5678-1991-abcdefghijklmn",
-    "image": "/images/blog_11.jpg",
+    "image": "/images/blog_11.webp",
     "alt": "Person debugging code on a laptop",
     "photographer": "Kevin Ku",
     "photographer_url": "https://unsplash.com/@ikukevk",
@@ -122,7 +122,7 @@
   },
   {
     "id": "g7h8i9j0-2345-6789-2001-opqrstuvwxyzef",
-    "image": "/images/blog_12.jpg",
+    "image": "/images/blog_12.webp",
     "alt": "Laptop with a cup of coffee and a notebook",
     "photographer": "Nathan Dumlao",
     "photographer_url": "https://unsplash.com/@nate_dumlao",

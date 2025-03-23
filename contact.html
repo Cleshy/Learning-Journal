@@ -106,36 +106,68 @@
       </nav>
     </header>
     <main>
-      <div class="hero">
+      <section class="contact">
         <div class="container">
-          <h1 class="hero__heading">My new journey as a bootcamp student.</h1>
-          <p class="hero__description">
-            After countless tutorials and blog posts, I chose Scrimba's Frontend
-            Path. <span>No regrets.</span>
-          </p>
-        </div>
-        <span class="image-credit image-credit--bottom-left">
-          Photo by
-          <a
-            class="credit-link"
-            href="https://unsplash.com/@joshuaryanphoto?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            target="_blank"
-            >Joshua Reddekopp</a
-          >
-          on
-          <a
-            class="credit-link"
-            href="https://unsplash.com/photos/macbook-pro-on-brown-wooden-table-SyYmXSDnJ54?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
-            target="_blank"
-            >Unsplash</a
-          >
-        </span>
-      </div>
-      <section class="container">
-        <h2 class="heading-secondary">Recent Posts</h2>
-        <div class="posts__container" id="posts__container-home"></div>
-        <div id="view-more-btn">
-          <button class="btn btn--primary">View More</button>
+          <h1 class="contact__heading">Get in touch!</h1>
+          <div id="contact">
+            <div class="contact__message hidden" id="contact__message">
+              <h3 class="contact__message-title">
+                Thank you for your message!
+              </h3>
+              <p class="contact__message-text">
+                I hope you’re enjoying my blog!
+              </p>
+              <div class="contact__message-icon">
+                <span class="checkmark"></span>
+              </div>
+            </div>
+            <form class="contact__form" id="contact__form">
+              <div class="contact__form-input-box">
+                <label class="contact__form-label" for="firstName"
+                  >First Name</label
+                >
+                <input
+                  class="contact__form-input"
+                  type="text"
+                  name="firstName"
+                  id="firstName"
+                  required
+                />
+              </div>
+              <div class="contact__form-input-box">
+                <label class="contact__form-label" for="lastName"
+                  >Last Name</label
+                >
+                <input
+                  class="contact__form-input"
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                  required
+                />
+              </div>
+              <div class="contact__form-input-box">
+                <label class="contact__form-label" for="email">E-mail</label>
+                <input
+                  class="contact__form-input"
+                  type="text"
+                  name="email"
+                  id="email"
+                  required
+                />
+              </div>
+              <div class="contact__form-input-box">
+                <label class="contact__form-label" for="message">Message</label>
+                <textarea
+                  class="contact__form-input contact__form-textarea"
+                  name="message"
+                  id="message"
+                  required
+                ></textarea>
+              </div>
+              <button class="btn btn--primary">Submit</button>
+            </form>
+          </div>
         </div>
       </section>
     </main>

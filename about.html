@@ -4,11 +4,53 @@
   <html lang="en">
     <head>
       <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta
-        name="viewport"
-        content="width=
-  , initial-scale=1.0"
+        name="description"
+        content="Cleshy's Journal is a personal blog documenting my journey as a bootcamp student, sharing coding tips, tutorials, and insights."
       />
+      <meta
+        name="keywords"
+        content="coding blog, frontend development, bootcamp journey, web development, programming tutorials"
+      />
+      <meta name="author" content="Szilárd Czipa" />
+      <meta name="robots" content="index, follow" />
+      <meta name="language" content="en" />
+      <meta name="theme-color" content="#ff6b35" />
+
+      <!-- Open Graph / Facebook -->
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:title"
+        content="Cleshy's Journal - My Coding Journey"
+      />
+      <meta
+        property="og:description"
+        content="Follow my journey as a bootcamp student, sharing coding tips, tutorials, and insights."
+      />
+      <meta property="og:url" content="https://www.cleshysjournal.com" />
+      <meta
+        property="og:image"
+        content="https://www.cleshysjournal.com/images/og-image.jpg"
+      />
+      <meta property="og:site_name" content="Cleshy's Journal" />
+
+      <!-- Twitter -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta
+        name="twitter:title"
+        content="Cleshy's Journal - My Coding Journey"
+      />
+      <meta
+        name="twitter:description"
+        content="Follow my journey as a bootcamp student, sharing coding tips, tutorials, and insights."
+      />
+      <meta
+        name="twitter:image"
+        content="https://www.cleshysjournal.com/images/og-image.jpg"
+      />
+      <meta name="twitter:site" content="@CleshyJournal" />
+
       <!-- Favicon -->
       <link
         rel="apple-touch-icon"
@@ -28,6 +70,7 @@
         href="/images/favicon/favicon-16x16.png"
       />
       <link rel="manifest" href="/images/favicon/site.webmanifest" />
+
       <!-- Google Fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -35,10 +78,12 @@
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
         rel="stylesheet"
       />
+
       <!-- CSS -->
       <link rel="stylesheet" href="css/reset.css" />
-      <link rel="stylesheet" href="css/styles.css" />
-      <title>Cleshy's Journal</title>
+      <link rel="stylesheet" href="css/styles.min.css" />
+
+      <title>Cleshy's Journal - My Coding Journey</title>
     </head>
     <body>
       <header>
@@ -46,7 +91,7 @@
           <div class="nav__container">
             <a class="nav__logo" href="index.html">Cleshy's Journal</a>
             <button
-              class="nav__mobile-toggle hidden"
+              class="nav__mobile-toggle"
               id="toggle-nav"
               aria-label="Toggle navigation"
             >
@@ -62,7 +107,7 @@
                 <a class="nav__link" href="about.html">About</a>
               </li>
               <li class="nav__item">
-                <a class="nav__link" href="#">Contact</a>
+                <a class="nav__link" href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
@@ -72,13 +117,14 @@
         <section class="about">
           <div class="container">
             <header class="about__intro">
-              <img class="about__img" src="./images/me.jpg" alt="" />
+              <img class="about__img" src="./images/me.webp" alt="" />
               <div>
                 <h1 class="about__heading">
                   <span class="about__heading--welcome"
                     >Hi there! <span class="wave">👋</span></span
                   >
-                  My name is Szilárd and welcome to my learning journal.
+                  I'm Szilárd, and I'm here to share my coding adventure with
+                  you.
                 </h1>
                 <p>
                   After several months of self-learning through YouTube videos
